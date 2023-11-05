@@ -1,0 +1,30 @@
+{
+  "name": "@a01sa01to/preset-textlint",
+  "description": "My preset of rules for textlint",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.0.1",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "textlint": "^13.3.3"
+  },
+  "dependencies": {
+    "textlint-rule-ja-no-abusage": "^3.0.0",
+    "textlint-rule-ja-space-around-code": "^2.2.0",
+    "textlint-rule-ja-space-around-link": "^2.2.0",
+    "textlint-rule-ja-space-between-half-and-full-width": "^2.3.0",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
+    "textlint-rule-no-nfd": "^2.0.2",
+    "textlint-rule-prefer-tari-tari": "^1.0.3"
+  },
+  "devDependencies": {
+    "@textlint/types": "^13.3.3",
+    "@types/node": "^20.8.10"
+  }
+}
