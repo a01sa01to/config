@@ -8,5 +8,9 @@
     "test": "yarn workspaces foreach -W run test",
     "publish": "yarn workspaces foreach -W npm publish --access public"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.1",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  }
 }
