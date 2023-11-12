@@ -24,6 +24,7 @@ export = {
     "prefer-tari-tari": PreferTariTari,
   },
   rulesConfig: {
+    "ja-no-abusage": true,
     "ja-space-between-half-and-full-width": {
       space: "always",
     },
@@ -35,11 +36,10 @@ export = {
       before: true,
       after: true,
     },
-    "ja-no-abusage": true,
-    "no-nfd": true,
     "no-mixed-zenkaku-and-hankaku-alphabet": {
       prefer: "半角",
     },
+    "no-nfd": true,
     "prefer-tari-tari": true,
   },
 };
