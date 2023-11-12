@@ -4,8 +4,17 @@
   "version": "0.0.2",
   "packageManager": "yarn@4.0.1",
   "license": "MIT",
+  "author": "a01sa01to",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a01sa01to/config.git",
+    "directory": "packages/textlint"
+  },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "textlintrule"
   ],
   "main": "dist/index.js",
   "scripts": {
