@@ -38,11 +38,13 @@ jobs:
           scope: "@a01sa01to"
           always-auth: true
           registry-url: "https://registry.npmjs.org"
+      - name: Set npmAuthToken
+        run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+      - name: Check whoami
+        run: yarn npm whoami
       - name: Install Deps
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
       - name: Publish
         run: yarn publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
