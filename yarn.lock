@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@textlint/kernel": "npm:^13.4.0"
-    "@textlint/types": "npm:^13.3.3"
+    "@textlint/types": "npm:^13.4.0"
     "@types/jest": "npm:^29.5.8"
     "@types/node": "npm:^20.8.10"
     jest: "npm:^29.7.0"
