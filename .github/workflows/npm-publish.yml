@@ -1,0 +1,49 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "yarn"
+      - name: Install Deps
+        run: yarn install --frozen-lockfile
+      - name: Test
+        run: yarn test
+      - name: Build
+        run: yarn build
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "yarn"
+          scope: "@a01sa01to"
+          token: ${{ secrets.NPM_TOKEN }}
+          always-auth: true
+          registry-url: "https://registry.npmjs.org"
+      - name: Install Deps
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - name: Check npm auth
+        run: yarn npm whoami
+      - name: Publish
+        run: yarn publish
