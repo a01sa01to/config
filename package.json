@@ -4,9 +4,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach -W run build",
-    "test": "yarn workspaces foreach -W run test",
-    "publish": "yarn workspaces foreach -W npm publish --access public"
+    "build": "yarn workspaces foreach -W --exclude . -p run build",
+    "test": "yarn workspaces foreach -W --exclude . -p run test",
+    "publish": "yarn workspaces foreach -W --exclude . -p npm publish --access public"
   },
   "packageManager": "yarn@4.0.1",
   "devDependencies": {
