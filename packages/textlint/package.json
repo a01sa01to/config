@@ -22,7 +22,7 @@
     "build": "tsc"
   },
   "peerDependencies": {
-    "textlint": "^13.3.3"
+    "textlint": "^13.4.1"
   },
   "dependencies": {
     "textlint-rule-ja-no-abusage": "^3.0.0",
@@ -40,7 +40,7 @@
     "@types/jest": "^29.5.8",
     "@types/node": "^20.8.10",
     "jest": "^29.7.0",
-    "textlint": "^13.3.3",
+    "textlint": "^13.4.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   }
