@@ -6,6 +6,19 @@ updates:
       interval: weekly
     reviewers:
       - a01sa01to
+    groups:
+      textlint:
+        patterns:
+          - "textlint-*"
+          - "@textlint/*"
+      root:
+        patterns:
+          - "@jest/*"
+          - "@types/*"
+          - "jest"
+          - "ts-jest"
+          - "typescript"
+          - "ts-node"
 
   - package-ecosystem: github-actions
     directory: "/"
