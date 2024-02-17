@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2024-02-17
+
+- chore: update dependencies
+
 ## 1.0.1 - 2023-11-28
 
 - chore: update dependencies
