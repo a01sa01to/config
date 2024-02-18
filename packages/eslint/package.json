@@ -16,7 +16,7 @@
   "keywords": [
     "eslint"
   ],
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
