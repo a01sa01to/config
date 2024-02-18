@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/eslint-config",
   "description": "My personal ESLint config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "yarn@4.1.0",
   "license": "MIT",
   "author": "a01sa01to",
@@ -16,7 +16,7 @@
   "keywords": [
     "eslint"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest"
