@@ -1,9 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
     "moduleResolution": "node",
-    "skipLibCheck": true,
-    "allowJs": true,
-    "esModuleInterop": true
-  }
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
 }
