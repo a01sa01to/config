@@ -1,5 +1,5 @@
 import { ESLint } from "eslint";
-import config from "../index";
+import config from "../src/index";
 
 export function createESLintInstance() {
   return new ESLint({
