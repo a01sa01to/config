@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "@a01sa01to/preset-textlint": true
+  }
+}
