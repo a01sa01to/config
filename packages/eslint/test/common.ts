@@ -1,4 +1,5 @@
 import { ESLint } from "eslint";
+
 import config from "../src/index";
 
 export function createESLintInstance() {

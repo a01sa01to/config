@@ -1,5 +1,5 @@
-import { createLinter, loadTextlintrc } from "textlint";
 import { TextlintKernelDescriptor } from "@textlint/kernel";
+import { createLinter, loadTextlintrc } from "textlint";
 
 import config from "../src/index";
 
