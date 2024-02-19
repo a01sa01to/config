@@ -7,10 +7,6 @@ updates:
     reviewers:
       - a01sa01to
     groups:
-      textlint:
-        patterns:
-          - 'textlint-*'
-          - '@textlint/*'
       root:
         patterns:
           - '@jest/*'
@@ -19,6 +15,20 @@ updates:
           - 'ts-jest'
           - 'typescript'
           - 'ts-node'
+      textlint:
+        patterns:
+          - 'textlint-*'
+          - '@textlint/*'
+      eslint:
+        patterns:
+          - 'eslint'
+          - 'eslint-*'
+          - '@eslint/*'
+          - '@typescript-eslint/*'
+      prettier:
+        patterns:
+          - 'prettier'
+          - 'prettier-*'
 
   - package-ecosystem: github-actions
     directory: '/'
