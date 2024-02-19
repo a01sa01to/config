@@ -1,59 +1,59 @@
-import type { Linter } from "eslint";
+import type { Linter } from 'eslint'
 
 const config: Linter.Config = {
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "import", "unused-imports", "sort-exports"],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'import', 'unused-imports', 'sort-exports'],
   rules: {
-    "no-unused-vars": "error",
-    "@typescript-eslint/consistent-type-imports": "error",
-    "unused-imports/no-unused-imports": "error",
-    "import/order": [
-      "error",
+    'no-unused-vars': 'error',
+    '@typescript-eslint/consistent-type-imports': 'error',
+    'unused-imports/no-unused-imports': 'error',
+    'import/order': [
+      'error',
       {
         pathGroups: [
           {
-            pattern: "react**",
-            group: "external",
-            position: "before",
+            pattern: 'react**',
+            group: 'external',
+            position: 'before',
           },
           {
-            pattern: "{next**,next/**}",
-            group: "external",
-            position: "before",
+            pattern: '{next**,next/**}',
+            group: 'external',
+            position: 'before',
           },
           {
-            pattern: "@/**",
-            group: "parent",
-            position: "before",
+            pattern: '@/**',
+            group: 'parent',
+            position: 'before',
           },
         ],
-        pathGroupsExcludedImportTypes: ["react"],
-        "newlines-between": "always",
+        pathGroupsExcludedImportTypes: ['react'],
+        'newlines-between': 'always',
         groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
         ],
         alphabetize: {
-          order: "asc",
+          order: 'asc',
           caseInsensitive: true,
-          orderImportKind: "asc",
+          orderImportKind: 'asc',
         },
       },
     ],
-    "sort-exports/sort-exports": [
-      "error",
+    'sort-exports/sort-exports': [
+      'error',
       {
-        sortDir: "asc",
-        sortExportKindFirst: "value",
+        sortDir: 'asc',
+        sortExportKindFirst: 'value',
       },
     ],
   },
-};
+}
 
-module.exports = config;
-export default config;
+module.exports = config
+export default config

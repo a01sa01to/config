@@ -7,13 +7,14 @@
     "build": "yarn workspaces foreach -W --exclude . -p run build",
     "test": "yarn workspaces foreach -W --exclude . -p run test",
     "publish": "yarn workspaces foreach -W --exclude . -p npm publish --access public",
-    "lint": "eslint . && textlint .",
-    "fix": "eslint . --fix && textlint . --fix"
+    "lint": "eslint . && textlint . && prettier --check .",
+    "fix": "eslint . --fix && textlint . --fix && prettier --write ."
   },
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
+    "@a01sa01to/prettier-config": "workspace:*",
     "@jest/globals": "^29.7.0",
     "@types/eslint": "^8.56.2",
     "@types/jest": "^29.5.12",
@@ -25,6 +26,7 @@
     "eslint-plugin-sort-exports": "^0.9.1",
     "eslint-plugin-unused-imports": "^3.1.0",
     "jest": "^29.7.0",
+    "prettier": "^3.2.5",
     "textlint": "^14.0.3",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",

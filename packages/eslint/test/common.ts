@@ -1,10 +1,10 @@
-import { ESLint } from "eslint";
+import { ESLint } from 'eslint'
 
-import config from "../src/index";
+import config from '../src/index'
 
 export function createESLintInstance() {
   return new ESLint({
     useEslintrc: false,
     overrideConfig: config,
-  });
+  })
 }

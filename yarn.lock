@@ -52,7 +52,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@a01sa01to/prettier-config@workspace:packages/prettier":
+"@a01sa01to/prettier-config@workspace:*, @a01sa01to/prettier-config@workspace:packages/prettier":
   version: 0.0.0-use.local
   resolution: "@a01sa01to/prettier-config@workspace:packages/prettier"
   dependencies:
@@ -5929,6 +5929,7 @@ __metadata:
   dependencies:
     "@a01sa01to/eslint-config": "workspace:*"
     "@a01sa01to/preset-textlint": "workspace:*"
+    "@a01sa01to/prettier-config": "workspace:*"
     "@jest/globals": "npm:^29.7.0"
     "@types/eslint": "npm:^8.56.2"
     "@types/jest": "npm:^29.5.12"
@@ -5940,6 +5941,7 @@ __metadata:
     eslint-plugin-sort-exports: "npm:^0.9.1"
     eslint-plugin-unused-imports: "npm:^3.1.0"
     jest: "npm:^29.7.0"
+    prettier: "npm:^3.2.5"
     textlint: "npm:^14.0.3"
     ts-jest: "npm:^29.1.2"
     ts-node: "npm:^10.9.2"

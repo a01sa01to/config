@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/"
+    directory: '/'
     schedule:
       interval: weekly
     reviewers:
@@ -9,19 +9,19 @@ updates:
     groups:
       textlint:
         patterns:
-          - "textlint-*"
-          - "@textlint/*"
+          - 'textlint-*'
+          - '@textlint/*'
       root:
         patterns:
-          - "@jest/*"
-          - "@types/*"
-          - "jest"
-          - "ts-jest"
-          - "typescript"
-          - "ts-node"
+          - '@jest/*'
+          - '@types/*'
+          - 'jest'
+          - 'ts-jest'
+          - 'typescript'
+          - 'ts-node'
 
   - package-ecosystem: github-actions
-    directory: "/"
+    directory: '/'
     schedule:
       interval: weekly
     reviewers:
