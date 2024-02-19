@@ -38,3 +38,18 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "yarn"
+      - name: Install Deps
+        run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
