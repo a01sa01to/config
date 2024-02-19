@@ -1,0 +1,36 @@
+{
+  "name": "@a01sa01to/prettier-config",
+  "description": "My personal Prettier config",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.1.0",
+  "license": "MIT",
+  "author": "a01sa01to",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a01sa01to/config.git",
+    "directory": "packages/prettier"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "prettier"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
