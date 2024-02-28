@@ -10,27 +10,36 @@ import { generateShortName } from './shortname-generator'
 const shortNameGenerator = generateShortName()
 const shortNameMemo = new Map<string, string>()
 
+const autoprefixerConfig: autoprefixer.Options = {
+  overrideBrowserslist: ['last 2 versions', 'not dead'],
+}
+
+const modulesConfig = {
+  generateScopedName: (
+    name: string,
+    _filename: string,
+    css: string,
+  ): string => {
+    const hash = `${name}__${css}`
+    if (shortNameMemo.has(hash)) {
+      return shortNameMemo.get(hash)!
+    }
+    const shortName = shortNameGenerator.next().value
+    shortNameMemo.set(hash, shortName)
+    return shortName
+  },
+  scopeBehaviour: 'local' as const,
+}
+
 const config: Config = {
   plugins: [
     postcssCombineDuplicatedSelectors(),
     postcssCalc({}),
-    autoprefixer({
-      overrideBrowserslist: ['last 2 versions', 'not dead'],
-    }),
-    postcssModules({
-      generateScopedName: (name, _filename, css) => {
-        const hash = `${name}__${css}`
-        if (shortNameMemo.has(hash)) {
-          return shortNameMemo.get(hash)!
-        }
-        const shortName = shortNameGenerator.next().value
-        shortNameMemo.set(hash, shortName)
-        return shortName
-      },
-      scopeBehaviour: 'local',
-    }),
+    autoprefixer(autoprefixerConfig),
+    postcssModules(modulesConfig),
     cssnano(),
   ],
 }
 
 export default config
+export { autoprefixerConfig, generateShortName, modulesConfig }
