@@ -1,11 +1,11 @@
-import autoprefixer from "autoprefixer"
-import cssnano from "cssnano"
-import postcssCalc from "postcss-calc"
-import postcssCombineDuplicatedSelectors from "postcss-combine-duplicated-selectors"
-import type { Config } from "postcss-load-config"
-import postcssModules from "postcss-modules"
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import postcssCalc from 'postcss-calc'
+import postcssCombineDuplicatedSelectors from 'postcss-combine-duplicated-selectors'
+import type { Config } from 'postcss-load-config'
+import postcssModules from 'postcss-modules'
 
-import { generateShortName } from "./shortname-generator"
+import { generateShortName } from './shortname-generator'
 
 const shortNameGenerator = generateShortName()
 const shortNameMemo = new Map<string, string>()
@@ -15,10 +15,7 @@ const config: Config = {
     postcssCombineDuplicatedSelectors(),
     postcssCalc({}),
     autoprefixer({
-      overrideBrowserslist: [
-        "last 2 versions",
-        "not dead"
-      ]
+      overrideBrowserslist: ['last 2 versions', 'not dead'],
     }),
     postcssModules({
       generateScopedName: (name, _filename, css) => {
@@ -33,7 +30,7 @@ const config: Config = {
       scopeBehaviour: 'local',
     }),
     cssnano(),
-  ]
+  ],
 }
 
 export default config

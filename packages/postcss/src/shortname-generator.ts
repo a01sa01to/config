@@ -12,7 +12,7 @@ export function* generateShortName(): Generator<string> {
     }
 
     tmp += chars.length - startChars.length
-    let name = ""
+    let name = ''
     while (tmp > startChars.length) {
       name += chars[tmp % chars.length]
       tmp = Math.floor(tmp / chars.length)

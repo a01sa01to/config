@@ -61,16 +61,16 @@ test('should work with 1 char', () => {
 })
 
 test('should work with 2 chars', () => {
-const shortNameGenerator = generateShortName()
+  const shortNameGenerator = generateShortName()
 
-  for (let i = 0; i < 53; i++)     shortNameGenerator.next()
+  for (let i = 0; i < 53; i++) shortNameGenerator.next()
   expect(shortNameGenerator.next().value).toBe('aa')
   expect(shortNameGenerator.next().value).toBe('ab')
-  for (let i = 0; i < 23; i++)     shortNameGenerator.next()
+  for (let i = 0; i < 23; i++) shortNameGenerator.next()
   expect(shortNameGenerator.next().value).toBe('az')
   expect(shortNameGenerator.next().value).toBe('aA')
   expect(shortNameGenerator.next().value).toBe('aB')
-  for (let i = 0; i < 23; i++)     shortNameGenerator.next()
+  for (let i = 0; i < 23; i++) shortNameGenerator.next()
   expect(shortNameGenerator.next().value).toBe('aZ')
   expect(shortNameGenerator.next().value).toBe('a_')
   expect(shortNameGenerator.next().value).toBe('a0')
