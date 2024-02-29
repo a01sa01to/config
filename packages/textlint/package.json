@@ -19,7 +19,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc --passWithNoTests"
   },
   "peerDependencies": {
     "textlint": "^14.0.3"
