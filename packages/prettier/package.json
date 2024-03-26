@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/prettier-config",
   "description": "My personal Prettier config",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "a01sa01to",
   "repository": {
@@ -15,7 +15,13 @@
   "keywords": [
     "prettier"
   ],
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest --passWithNoTests"

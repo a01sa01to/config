@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/eslint-config",
   "description": "My personal ESLint config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "a01sa01to",
   "repository": {
@@ -15,7 +15,13 @@
   "keywords": [
     "eslint"
   ],
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest --passWithNoTests"
