@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/preset-textlint",
   "description": "My preset of rules for textlint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "a01sa01to",
   "repository": {
