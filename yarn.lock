@@ -61,9 +61,9 @@ __metadata:
     jest: "npm:^29.7.0"
     textlint: "npm:^14.0.4"
     textlint-rule-ja-no-abusage: "npm:^3.0.0"
-    textlint-rule-ja-space-around-code: "npm:^2.3.1"
-    textlint-rule-ja-space-around-link: "npm:^2.3.1"
-    textlint-rule-ja-space-between-half-and-full-width: "npm:^2.3.1"
+    textlint-rule-ja-space-around-code: "npm:^2.4.1"
+    textlint-rule-ja-space-around-link: "npm:^2.4.1"
+    textlint-rule-ja-space-between-half-and-full-width: "npm:^2.4.1"
     textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet: "npm:^1.0.1"
     textlint-rule-no-nfd: "npm:^2.0.2"
     textlint-rule-prefer-tari-tari: "npm:^1.0.3"
@@ -7352,33 +7352,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"textlint-rule-ja-space-around-code@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "textlint-rule-ja-space-around-code@npm:2.3.1"
+"textlint-rule-ja-space-around-code@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "textlint-rule-ja-space-around-code@npm:2.4.1"
   dependencies:
     match-index: "npm:^1.0.1"
     textlint-rule-helper: "npm:^2.2.4"
-  checksum: 10c0/dfdb60466ed56d9a468cf9ebd1cc077b7d50837799c37630d954e30df5c4ca443eed850e34c35c9eb6e05ef4a83e9d57f3588caac579abc92c792d908ef3aa4b
+  checksum: 10c0/faa6b3b7444e288143872e8d919718b8eedc6c9fb925168af1511e78911323c1ef624b3d9161a409845dcfe1fa97cb98cefe92511de610418d9f9649d583ff53
   languageName: node
   linkType: hard
 
-"textlint-rule-ja-space-around-link@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "textlint-rule-ja-space-around-link@npm:2.3.1"
+"textlint-rule-ja-space-around-link@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "textlint-rule-ja-space-around-link@npm:2.4.1"
   dependencies:
     match-index: "npm:^1.0.1"
     textlint-rule-helper: "npm:^2.2.4"
-  checksum: 10c0/7b38ba4ec9d7f004eb613532b50a19545c16e9e411060bc4d77390ce409b03c840e72d71de26b0f00319c7aaa7e4e97a8cd53d058134f7690f217502921b7d07
+  checksum: 10c0/c53662a69e7c64a37f913286fafbc2fcd29494964e1b0c080a0be3712f4bc35eda7ca51bc9381876d13975d838acbb24614606a6399dee8113e7e06c30996117
   languageName: node
   linkType: hard
 
-"textlint-rule-ja-space-between-half-and-full-width@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "textlint-rule-ja-space-between-half-and-full-width@npm:2.3.1"
+"textlint-rule-ja-space-between-half-and-full-width@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "textlint-rule-ja-space-between-half-and-full-width@npm:2.4.1"
   dependencies:
     match-index: "npm:^1.0.1"
     textlint-rule-helper: "npm:^2.2.4"
-  checksum: 10c0/0f193a68b6a86693c0a36fe1f5b59048b8934a7e09ed0d187887a44d6398b7f28d869f0178b1dbe98fe8cd028535b31ac8001458684981f7e6c5d4e02521445a
+  checksum: 10c0/67bb5499cb8209c3fb6bb9ad31eff2e9398560eb534322f90dc2f3185f7b65b0ccf4277edd7e008614aab90c451a01291d1ac42414e2e78d07d435c4644e64c3
   languageName: node
   linkType: hard
 
