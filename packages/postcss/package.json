@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.2",
+    "cssnano": "^7.0.1",
     "postcss-calc": "^9.0.1",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-modules": "^6.0.0"
