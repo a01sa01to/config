@@ -12,7 +12,7 @@ __metadata:
     "@jest/globals": "npm:^29.7.0"
     "@types/eslint": "npm:^8.56.10"
     "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.2"
     "@typescript-eslint/eslint-plugin": "npm:^7.7.0"
     "@typescript-eslint/parser": "npm:^7.7.0"
     eslint: "npm:^8.57.0"
@@ -20,7 +20,7 @@ __metadata:
     eslint-plugin-sort-exports: "npm:^0.9.1"
     eslint-plugin-unused-imports: "npm:^3.1.0"
     jest: "npm:^29.7.0"
-    ts-jest: "npm:^29.1.2"
+    ts-jest: "npm:^29.1.4"
     typescript: "npm:^5.4.5"
   peerDependencies:
     eslint: ^8.56.0
@@ -33,7 +33,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.2"
     autoprefixer: "npm:^10.4.19"
     cssnano: "npm:^6.1.2"
     jest: "npm:^29.7.0"
@@ -42,7 +42,7 @@ __metadata:
     postcss-combine-duplicated-selectors: "npm:^10.0.3"
     postcss-load-config: "npm:^5.0.3"
     postcss-modules: "npm:^6.0.0"
-    ts-jest: "npm:^29.1.2"
+    ts-jest: "npm:^29.1.4"
     typescript: "npm:^5.4.5"
   peerDependencies:
     postcss: ^8.4.35
@@ -57,7 +57,7 @@ __metadata:
     "@textlint/kernel": "npm:^14.0.4"
     "@textlint/types": "npm:^14.0.4"
     "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.2"
     jest: "npm:^29.7.0"
     textlint: "npm:^14.0.4"
     textlint-rule-ja-no-abusage: "npm:^3.0.0"
@@ -67,7 +67,7 @@ __metadata:
     textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet: "npm:^1.0.1"
     textlint-rule-no-nfd: "npm:^2.0.2"
     textlint-rule-prefer-tari-tari: "npm:^1.0.3"
-    ts-jest: "npm:^29.1.2"
+    ts-jest: "npm:^29.1.4"
     typescript: "npm:^5.4.5"
   peerDependencies:
     textlint: ^14.0.3
@@ -80,10 +80,10 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.2"
     jest: "npm:^29.7.0"
     prettier: "npm:^3.2.5"
-    ts-jest: "npm:^29.1.2"
+    ts-jest: "npm:^29.1.4"
     typescript: "npm:^5.4.5"
   peerDependencies:
     prettier: ^3.2.5
@@ -1381,12 +1381,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.7":
-  version: 20.12.7
-  resolution: "@types/node@npm:20.12.7"
+"@types/node@npm:^20.14.2":
+  version: 20.14.2
+  resolution: "@types/node@npm:20.14.2"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/dce80d63a3b91892b321af823d624995c61e39c6a223cc0ac481a44d337640cc46931d33efb3beeed75f5c85c3bda1d97cef4c5cd4ec333caf5dee59cff6eca0
+  checksum: 10c0/2d86e5f2227aaa42212e82ea0affe72799111b888ff900916376450b02b09b963ca888b20d9c332d8d2b833ed4781987867a38eaa2e4863fa8439071468b0a6f
   languageName: node
   linkType: hard
 
@@ -6769,7 +6769,7 @@ __metadata:
     "@jest/globals": "npm:^29.7.0"
     "@types/eslint": "npm:^8.56.10"
     "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.2"
     "@typescript-eslint/eslint-plugin": "npm:^7.7.0"
     "@typescript-eslint/parser": "npm:^7.7.0"
     eslint: "npm:^8.57.0"
@@ -6779,7 +6779,7 @@ __metadata:
     jest: "npm:^29.7.0"
     prettier: "npm:^3.2.5"
     textlint: "npm:^14.0.4"
-    ts-jest: "npm:^29.1.2"
+    ts-jest: "npm:^29.1.4"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.4.5"
   languageName: unknown
@@ -7547,9 +7547,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.1.2":
-  version: 29.1.2
-  resolution: "ts-jest@npm:29.1.2"
+"ts-jest@npm:^29.1.4":
+  version: 29.1.4
+  resolution: "ts-jest@npm:29.1.4"
   dependencies:
     bs-logger: "npm:0.x"
     fast-json-stable-stringify: "npm:2.x"
@@ -7561,12 +7561,15 @@ __metadata:
     yargs-parser: "npm:^21.0.1"
   peerDependencies:
     "@babel/core": ">=7.0.0-beta.0 <8"
+    "@jest/transform": ^29.0.0
     "@jest/types": ^29.0.0
     babel-jest: ^29.0.0
     jest: ^29.0.0
     typescript: ">=4.3 <6"
   peerDependenciesMeta:
     "@babel/core":
+      optional: true
+    "@jest/transform":
       optional: true
     "@jest/types":
       optional: true
@@ -7576,7 +7579,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: 10c0/c2f51f0241f89d127d41392decbcb83b5dfd5e57ab9d50220aa7b7e2f9b3f3b07ccdbba33311284df1c41941879e4ddfad44b15a9d0da4b74bd1b98702b729df
+  checksum: 10c0/97def10be26a553e529dfacafe264fa9833d638052bc2b1ebe6301262ae2d3e43954f4d91f2d2d07cf92352cdd4fa163a86f8116a1f6bb8cef7060cddfec794b
   languageName: node
   linkType: hard
 
