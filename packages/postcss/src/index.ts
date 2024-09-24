@@ -23,13 +23,10 @@ const autoprefixerConfig: autoprefixer.Options = {
 const modulesConfig = {
   generateScopedName: (
     name: string,
-    _filename: string,
-    css: string,
+    filename: string,
   ): string => {
-    const hash = `${name}__${css}`
-    if (shortNameMemo.has(hash)) {
-      return shortNameMemo.get(hash)!
-    }
+    const hash = /\.module\.s?css$/.test(filename) ? `${filename}:${name}` : name
+    if (shortNameMemo.has(hash)) return shortNameMemo.get(hash)!
     const shortName = shortNameGenerator.next().value
     shortNameMemo.set(hash, shortName)
     return shortName
