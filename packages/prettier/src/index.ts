@@ -12,5 +12,3 @@ const config: Config = {
 
 export default config
 module.exports = config
-
-// memo: テストはなんか jest がうまくいかないのでやってない
