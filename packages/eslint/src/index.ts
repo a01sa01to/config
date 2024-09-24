@@ -18,7 +18,7 @@ const config: Linter.Config = {
             position: 'before',
           },
           {
-            pattern: '{next**,next/**}',
+            pattern: '{next**,next/**,@remix-run/**}',
             group: 'external',
             position: 'before',
           },
