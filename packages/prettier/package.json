@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/prettier-config",
   "description": "My personal Prettier config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "author": "a01sa01to",
   "repository": {
@@ -34,11 +34,11 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.13",
-    "@types/node": "^20.16.6",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.1",
     "jest": "^29.7.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.6.2"
+    "typescript": "^5.7.2"
   }
 }
