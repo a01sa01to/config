@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "module": "NodeNext",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +25,7 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "skipLibCheck": false,
-    "types": ["node"]
+    "types": ["node", "jest"],
+    "moduleResolution": "nodenext"
   }
 }
