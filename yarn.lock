@@ -31,7 +31,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.1"
+    "@types/node": "npm:^22.10.2"
     autoprefixer: "npm:^10.4.20"
     cssnano: "npm:^7.0.6"
     jest: "npm:^29.7.0"
@@ -55,7 +55,7 @@ __metadata:
     "@textlint/kernel": "npm:^14.4.0"
     "@textlint/types": "npm:^14.4.0"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.1"
+    "@types/node": "npm:^22.10.2"
     jest: "npm:^29.7.0"
     textlint: "npm:^14.4.0"
     textlint-rule-ja-no-abusage: "npm:^3.0.0"
@@ -78,7 +78,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.1"
+    "@types/node": "npm:^22.10.2"
     jest: "npm:^29.7.0"
     prettier: "npm:^3.4.2"
     ts-jest: "npm:^29.2.5"
@@ -1454,7 +1454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.10.1, @types/node@npm:^22.10.2":
+"@types/node@npm:^22.10.2":
   version: 22.10.2
   resolution: "@types/node@npm:22.10.2"
   dependencies:
