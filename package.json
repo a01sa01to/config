@@ -7,7 +7,6 @@
     "build": "yarn workspaces foreach -W --exclude . -p run build",
     "test": "yarn workspaces foreach -W --exclude . -p run test",
     "publish": "yarn workspaces foreach -W --exclude . -p npm publish --access public",
-    "lint:eslint": "eslint . --debug",
     "lint": "eslint . && textlint . && prettier --check .",
     "fix": "eslint . --fix && textlint . --fix && prettier --write ."
   },
