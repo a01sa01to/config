@@ -1,13 +1,13 @@
 import type { Config } from 'prettier'
 
 const config: Config = {
-  useTabs: false,
+  arrowParens: 'avoid',
+  bracketSpacing: true,
+  endOfLine: 'lf',
+  jsxSingleQuote: true,
   semi: false,
   singleQuote: true,
-  jsxSingleQuote: true,
-  bracketSpacing: true,
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
+  useTabs: false,
 }
 
 export default config

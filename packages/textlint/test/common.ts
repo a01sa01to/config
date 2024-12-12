@@ -1,32 +1,27 @@
-import { TextlintKernelDescriptor } from '@textlint/kernel'
 import { createLinter, loadTextlintrc } from 'textlint'
+import { TextlintKernelDescriptor } from '@textlint/kernel'
 
 import config from '../src/index'
 
 // ts 対応させるため
 // ref: https://zenn.dev/ossamoon/articles/694a601ee62526
-const Object_keys = <T extends { [key: string]: unknown }>(
-  obj: T,
-): (keyof T)[] => {
-  return Object.keys(obj)
-}
+const objectKeys = <T extends Record<string, unknown>>(obj: T): (keyof T)[] =>
+  Object.keys(obj)
 
 export const setupLinter = async () => {
-  const rules = Object_keys(config.rules).map(key => {
-    return {
-      ruleId: key,
-      rule: config.rules[key],
-      options: config.rulesConfig[key],
-    }
-  })
+  const rules = objectKeys(config.rules).map(key => ({
+    options: config.rulesConfig[key],
+    rule: config.rules[key],
+    ruleId: key,
+  }))
 
   const descriptor = new TextlintKernelDescriptor({
-    rules,
     filterRules: [],
     plugins: [],
+    rules,
   }).concat(await loadTextlintrc())
 
   const linter = createLinter({ descriptor })
 
-  return { linter, descriptor }
+  return { descriptor, linter }
 }

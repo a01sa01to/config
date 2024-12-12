@@ -1,19 +1,22 @@
-import { expect, test, afterEach } from '@jest/globals'
-import type { ProcessOptions } from 'postcss';
-import postcss from 'postcss'
+import { afterEach, expect, test } from '@jest/globals'
+import postcss, { type ProcessOptions } from 'postcss'
 
-import { __resetShortNameGenerator, plugins } from '../src'
+// eslint-disable-next-line camelcase
+import { plugins, testonly_resetShortNameGenerator } from '../src'
 
 afterEach(() => {
-  __resetShortNameGenerator()
+  testonly_resetShortNameGenerator()
 })
 
 const processOption: ProcessOptions = {
+  // Without `from` option PostCSS could generate wrong source map and will not find Browserslist config.
+  // Set it to CSS file path or to `undefined` to prevent this warning. となるので undefined を設定
+  // eslint-disable-next-line no-undefined
   from: undefined,
-  map: false
+  map: false,
 }
 
-test('should be setup', async () => {
+test('should be setup', () => {
   const instance = postcss(plugins)
   expect(instance).not.toBeUndefined()
 })
@@ -26,7 +29,7 @@ test('shortname', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe(".a{color:red}")
+  expect(result.css).toBe('.a{color:red}')
 })
 
 test('postcss-combine-duplicated-selectors', async () => {
@@ -43,7 +46,7 @@ test('postcss-combine-duplicated-selectors', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe(".a{background-color:red;color:red}.b{color:blue}")
+  expect(result.css).toBe('.a{background-color:red;color:red}.b{color:blue}')
 })
 
 test('postcss-calc', async () => {
@@ -54,7 +57,7 @@ test('postcss-calc', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe(".a{font-size:32px}")
+  expect(result.css).toBe('.a{font-size:32px}')
 })
 
 // autoprefixer は caniuse の結果に左右されちゃうのでテストはスキップする
@@ -71,5 +74,5 @@ test('cssnano', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe(".a{color:red;font-weight:400}")
+  expect(result.css).toBe('.a{color:red;font-weight:400}')
 })
