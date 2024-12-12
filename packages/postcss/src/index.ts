@@ -60,11 +60,12 @@ const config: Config = {
 }
 
 export default config
-// eslint-disable-next-line camelcase
+
 export {
   autoprefixerConfig,
   generateShortName,
   modulesConfig,
   plugins,
+  // eslint-disable-next-line camelcase
   testonly_resetShortNameGenerator,
 }

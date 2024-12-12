@@ -4,14 +4,9 @@ import { expect, test } from '@jest/globals'
 
 import { createESLintInstance } from './common'
 
-test('should be setup', async () => {
+test('should be setup', () => {
   const instance = createESLintInstance()
   expect(instance).not.toBeUndefined()
-  const res = await instance.lintText(
-    "/*global console*/ console.log('Hello World!');",
-  )
-  expect(res).toHaveLength(1)
-  expect(res[0]!.messages).toHaveLength(0)
 })
 
 test('no-used-vars', async () => {

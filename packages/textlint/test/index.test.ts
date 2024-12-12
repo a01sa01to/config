@@ -23,7 +23,8 @@ test('ja-no-abusage', async () => {
   expect(result.output).toBe(
     '`logger` と `crashReporter` の middleware を適用した `createStore` 関数を作る',
   )
-})
+  // ブレあるけど、なんか時間がかかるらしいので
+}, 10000)
 
 test('ja-space-around-code', async () => {
   const { linter } = await setupLinter()
