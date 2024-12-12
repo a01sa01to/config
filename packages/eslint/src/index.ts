@@ -1,59 +1,36 @@
-import type { Linter } from 'eslint'
+import eslint from "@eslint/js"
+import tseslint from "typescript-eslint"
+import unusedImports from "eslint-plugin-unused-imports"
 
-const config: Linter.Config = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import', 'unused-imports', 'sort-exports'],
-  rules: {
-    'no-unused-vars': 'error',
-    '@typescript-eslint/consistent-type-imports': 'error',
-    'unused-imports/no-unused-imports': 'error',
-    'import/order': [
-      'error',
-      {
-        pathGroups: [
-          {
-            pattern: 'react**',
-            group: 'external',
-            position: 'before',
-          },
-          {
-            pattern: '{next**,next/**,@remix-run/**}',
-            group: 'external',
-            position: 'before',
-          },
-          {
-            pattern: '@/**',
-            group: 'parent',
-            position: 'before',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'always',
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-        ],
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-          orderImportKind: 'asc',
-        },
+const config = tseslint.config(
+  eslint.configs.all,
+  tseslint.configs.strictTypeChecked,
+  tseslint.configs.stylisticTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: __dirname,
       },
-    ],
-    'sort-exports/sort-exports': [
-      'error',
-      {
-        sortDir: 'asc',
-        sortExportKindFirst: 'value',
-      },
-    ],
+    },
   },
-}
+  {
+    plugins: {
+      'unused-imports': unusedImports,
+    },
+    rules: {
+      '@typescript-eslint/consistent-type-exports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
+      'no-unused-vars': 'error',
+      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-vars': 'error',
+    },
+  },
+  {
+    extends: [tseslint.configs.disableTypeChecked],
+    files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'],
+  },
+)
 
 module.exports = config
 export default config

@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "@a01sa01to/eslint-config"
-  ],
-  "ignorePatterns": [
-    "node_modules/",
-    "dist/"
-  ]
-}
