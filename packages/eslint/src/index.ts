@@ -1,11 +1,29 @@
+import { type Linter } from "eslint"
 import eslint from '@eslint/js'
+import jsxA11y from "eslint-plugin-jsx-a11y"
+import reactPlugin from "eslint-plugin-react"
 import tseslint from 'typescript-eslint'
 import unusedImports from 'eslint-plugin-unused-imports'
+
+interface ReactFlatConfig {
+  plugins: { react: typeof reactPlugin }
+  rules: Linter.RulesRecord
+  languageOptions: { parserOptions: Linter.ParserOptions }
+}
+
+const typedReactPluginFlatConfig = reactPlugin.configs.flat as {
+  "all": ReactFlatConfig,
+  "recommended": ReactFlatConfig,
+  "jsx-runtime": ReactFlatConfig,
+}
 
 const config = tseslint.config(
   eslint.configs.all,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
+  typedReactPluginFlatConfig.recommended,
+  typedReactPluginFlatConfig['jsx-runtime'],
+  jsxA11y.flatConfigs.recommended,
   {
     languageOptions: {
       parserOptions: {
