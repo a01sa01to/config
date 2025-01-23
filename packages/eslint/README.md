@@ -1,6 +1,6 @@
-# eslint config
+# ESLint Config
 
-My eslint config.
+My ESLint Config.
 
 ## Usage
 

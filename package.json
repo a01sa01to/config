@@ -34,11 +34,11 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "*.md": [
+    "*.{md,txt}": [
       "textlint --fix",
       "prettier --write"
     ],
-    "*": [
+    "*.{json,css,scss,html,yaml}": [
       "prettier --write"
     ]
   }
