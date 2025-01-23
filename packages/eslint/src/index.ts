@@ -1,4 +1,4 @@
-import { type Linter } from 'eslint'
+import type { Linter } from 'eslint'
 import eslint from '@eslint/js'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -18,7 +18,7 @@ const typedReactPluginFlatConfig = reactPlugin.configs.flat as {
 }
 
 const config = tseslint.config(
-  eslint.configs.all,
+  eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   typedReactPluginFlatConfig.recommended,
