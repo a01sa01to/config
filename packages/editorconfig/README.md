@@ -1,0 +1,3 @@
+# EditorConfig
+
+My EditorConfig file.
