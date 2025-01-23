@@ -11,7 +11,6 @@ import { generateShortName } from './shortname-generator'
 let shortNameGenerator = generateShortName()
 const shortNameMemo = new Map<string, string>()
 
-// eslint-disable-next-line camelcase
 const testonly_resetShortNameGenerator = () => {
   shortNameGenerator = generateShortName()
   shortNameMemo.clear()
@@ -66,6 +65,5 @@ export {
   generateShortName,
   modulesConfig,
   plugins,
-  // eslint-disable-next-line camelcase
   testonly_resetShortNameGenerator,
 }

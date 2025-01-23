@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-
 import { expect, test } from '@jest/globals'
 
 import { setupLinter } from './common'

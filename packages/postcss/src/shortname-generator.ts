@@ -1,7 +1,4 @@
-/* eslint-disable no-magic-numbers */
-
 // a, b, c, ..., z, A, B, ..., Z, _, aa, ab, ... みたいな className を生成するやつ
-// eslint-disable-next-line func-names
 const generateShortName = function* (): Generator<string, string, string> {
   const startChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_'
   const chars = `${startChars}0123456789`

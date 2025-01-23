@@ -1,7 +1,6 @@
 import { afterEach, expect, test } from '@jest/globals'
 import postcss, { type ProcessOptions } from 'postcss'
 
-// eslint-disable-next-line camelcase
 import { plugins, testonly_resetShortNameGenerator } from '../src'
 
 afterEach(() => {
@@ -11,7 +10,6 @@ afterEach(() => {
 const processOption: ProcessOptions = {
   // Without `from` option PostCSS could generate wrong source map and will not find Browserslist config.
   // Set it to CSS file path or to `undefined` to prevent this warning. となるので undefined を設定
-  // eslint-disable-next-line no-undefined
   from: undefined,
   map: false,
 }

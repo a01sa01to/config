@@ -1,4 +1,4 @@
-/* eslint-disable no-magic-numbers, @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 
 import { expect, test } from '@jest/globals'
 
