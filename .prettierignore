@@ -1,1 +1,4 @@
 .yarn
+yarn.lock
+.husky
+.prettierignore
