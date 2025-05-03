@@ -26,6 +26,7 @@
     "allowUnreachableCode": false,
     "skipLibCheck": false,
     "types": ["node", "jest"],
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "isolatedModules": true
   }
 }

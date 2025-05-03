@@ -11,3 +11,7 @@
 //   const res = await prettier.format("foo", option)
 //   expect(res).toBe("foo")
 // })
+
+test('temp', () => {
+  expect(true).toBe(true)
+})
