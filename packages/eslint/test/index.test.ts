@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-
 import { describe, expect, test } from '@jest/globals'
 
 import { createESLintInstance } from './common'
@@ -13,14 +11,14 @@ test('no-used-vars', async () => {
   const instance = createESLintInstance()
   const res = await instance.lintText('const foo = 1')
   expect(res).toHaveLength(1)
-  expect(res[0]!.errorCount).toBeGreaterThan(0)
+  expect(res[0]?.errorCount).toBeGreaterThan(0)
 })
 
 test('unused-imports', async () => {
   const instance = createESLintInstance()
   const res = await instance.lintText("import { foo } from './foo'")
   expect(res).toHaveLength(1)
-  expect(res[0]!.errorCount).toBeGreaterThan(0)
+  expect(res[0]?.errorCount).toBeGreaterThan(0)
 })
 
 describe('React', () => {
@@ -42,7 +40,7 @@ describe('React', () => {
       },
     )
     expect(res).toHaveLength(1)
-    expect(res[0]!.errorCount).toBe(0)
+    expect(res[0]?.errorCount).toBe(0)
   })
 
   test('a11y', async () => {
@@ -61,6 +59,6 @@ describe('React', () => {
     console.log(res)
     console.log(res[0]?.messages)
     expect(res).toHaveLength(1)
-    expect(res[0]!.errorCount).toBeGreaterThan(0)
+    expect(res[0]?.errorCount).toBeGreaterThan(0)
   })
 })
