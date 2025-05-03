@@ -21,9 +21,19 @@ const config = tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
-  typedReactPluginFlatConfig.recommended,
-  typedReactPluginFlatConfig['jsx-runtime'],
-  jsxA11y.flatConfigs.recommended,
+  {
+    extends: [
+      typedReactPluginFlatConfig.recommended,
+      typedReactPluginFlatConfig['jsx-runtime'],
+      jsxA11y.flatConfigs.recommended,
+    ],
+    files: ['**/*.tsx', '**/*.jsx'],
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
   {
     languageOptions: {
       parserOptions: {
