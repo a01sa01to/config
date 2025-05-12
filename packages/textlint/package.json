@@ -44,12 +44,12 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
-    "@textlint/kernel": "^14.6.0",
-    "@textlint/types": "^14.6.0",
+    "@textlint/kernel": "^14.7.1",
+    "@textlint/types": "^14.7.1",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.17",
     "jest": "^29.7.0",
-    "textlint": "^14.6.0",
+    "textlint": "^14.7.1",
     "ts-jest": "^29.3.2",
     "typescript": "^5.8.3"
   }
