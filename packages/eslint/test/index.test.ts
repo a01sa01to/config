@@ -56,8 +56,6 @@ describe('React', () => {
         filePath: 'src/App.jsx',
       },
     )
-    console.log(res)
-    console.log(res[0]?.messages)
     expect(res).toHaveLength(1)
     expect(res[0]?.errorCount).toBeGreaterThan(0)
   })
