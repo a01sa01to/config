@@ -1,4 +1,4 @@
-import { expect, test } from '@jest/globals'
+import { expect, test } from 'vitest'
 
 import { generateShortName } from '../src/shortname-generator'
 

@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -W --exclude . -p run build",
-    "test": "yarn workspaces foreach -W --exclude . -p run test",
+    "test": "yarn workspaces foreach -W --exclude . run test:ci",
     "publish": "yarn build && yarn workspaces foreach -W --exclude . -p npm publish --access public",
     "lint": "eslint . && textlint . && prettier --check .",
     "fix": "eslint . --fix && textlint . --fix && prettier --write .",
@@ -16,17 +16,12 @@
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
     "@a01sa01to/prettier-config": "workspace:*",
-    "@jest/globals": "^30.0.5",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.2.1",
     "eslint": "^9.33.0",
     "husky": "^9.1.7",
-    "jest": "^30.0.5",
     "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
     "textlint": "^15.2.1",
-    "ts-jest": "^29.4.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "lint-staged": {

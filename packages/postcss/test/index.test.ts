@@ -1,4 +1,4 @@
-import { afterEach, expect, test } from '@jest/globals'
+import { afterEach, expect, test } from 'vitest'
 import postcss, { type ProcessOptions } from 'postcss'
 
 import { plugins, testonly_resetShortNameGenerator } from '../src'
