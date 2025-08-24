@@ -44,10 +44,10 @@
     "textlint-rule-prefer-tari-tari": "^1.0.3"
   },
   "devDependencies": {
-    "@textlint/kernel": "^15.2.1",
-    "@textlint/types": "^15.2.1",
-    "@types/node": "^24.2.1",
-    "textlint": "^15.2.1",
+    "@textlint/kernel": "^15.2.2",
+    "@textlint/types": "^15.2.2",
+    "@types/node": "^24.3.0",
+    "textlint": "^15.2.2",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
