@@ -16,6 +16,7 @@
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
     "@a01sa01to/prettier-config": "workspace:*",
+    "@changesets/cli": "^2.29.6",
     "@types/node": "^24.2.1",
     "eslint": "^9.33.0",
     "husky": "^9.1.7",

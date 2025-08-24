@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/prettier-config",
   "description": "My personal Prettier config",
-  "version": "1.0.11",
+  "version": "1.0.12-beta.2",
   "license": "MIT",
   "author": "a01sa01to",
   "repository": {
