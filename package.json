@@ -11,7 +11,7 @@
     "fix": "eslint . --fix && textlint . --fix && prettier --write .",
     "postinstall": "husky"
   },
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.3",
   "devDependencies": {
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
