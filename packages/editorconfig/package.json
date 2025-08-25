@@ -1,0 +1,33 @@
+{
+  "name": "@a01sa01to/editorconfig",
+  "description": "My personal EditorConfig",
+  "version": "0.0.1",
+  "keywords": [
+    "editorconfig"
+  ],
+  "author": "a01sa01to",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a01sa01to/config.git",
+    "directory": "packages/editorconfig"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "a01sa01to-editorconfig": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:ci": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

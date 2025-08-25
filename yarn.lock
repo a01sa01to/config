@@ -5,6 +5,18 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@a01sa01to/editorconfig@workspace:packages/editorconfig":
+  version: 0.0.0-use.local
+  resolution: "@a01sa01to/editorconfig@workspace:packages/editorconfig"
+  dependencies:
+    "@types/node": "npm:^24.3.0"
+    typescript: "npm:^5.9.2"
+    vitest: "npm:^3.2.4"
+  bin:
+    a01sa01to-editorconfig: ./dist/bin.js
+  languageName: unknown
+  linkType: soft
+
 "@a01sa01to/eslint-config@workspace:*, @a01sa01to/eslint-config@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@a01sa01to/eslint-config@workspace:packages/eslint"
