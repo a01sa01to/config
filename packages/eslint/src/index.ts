@@ -30,7 +30,7 @@ const config = tseslint.config(
     files: ['**/*.tsx', '**/*.jsx'],
     settings: {
       react: {
-        version: 'detect',
+        version: '19',
       },
     },
   },

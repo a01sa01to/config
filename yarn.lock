@@ -25,6 +25,8 @@ __metadata:
     vitest: "npm:^3.2.4"
   peerDependencies:
     eslint: ^9
+    react: ^19
+    typescript: ^5
   languageName: unknown
   linkType: soft
 
