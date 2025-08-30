@@ -1,7 +1,7 @@
 {
   "name": "@a01sa01to/postcss-config",
   "description": "My personal PostCSS config",
-  "version": "1.1.12-beta.2",
+  "version": "1.1.12",
   "license": "MIT",
   "author": "a01sa01to",
   "type": "module",
