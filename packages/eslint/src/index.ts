@@ -38,7 +38,7 @@ const config = tseslint.config(
     languageOptions: {
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: __dirname,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
@@ -82,7 +82,7 @@ const config = tseslint.config(
   {
     extends: [tseslint.configs.disableTypeChecked],
     files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'],
-  },
+  }
 )
 
 export default config

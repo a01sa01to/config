@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
 
-import { generateShortName } from '../src/shortname-generator'
+import { generateShortName } from '../src/shortname-generator.js'
 
 test('should work with 1 char', () => {
   const shortNameGenerator = generateShortName()

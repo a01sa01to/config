@@ -1,7 +1,7 @@
 import { createLinter, loadTextlintrc } from 'textlint'
 import { TextlintKernelDescriptor } from '@textlint/kernel'
 
-import config from '../src/index'
+import config from '../src/index.js'
 
 // ts 対応させるため
 // ref: https://zenn.dev/ossamoon/articles/694a601ee62526

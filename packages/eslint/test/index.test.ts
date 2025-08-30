@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 
-import { createESLintInstance } from './common'
+import { createESLintInstance } from './common.js'
 
 test('should be setup', () => {
   const instance = createESLintInstance()
@@ -37,7 +37,7 @@ describe('React', () => {
     `,
       {
         filePath: 'src/App.jsx',
-      },
+      }
     )
     expect(res).toHaveLength(1)
     expect(res[0]?.errorCount).toBe(0)
@@ -54,7 +54,7 @@ describe('React', () => {
     `,
       {
         filePath: 'src/App.jsx',
-      },
+      }
     )
     expect(res).toHaveLength(1)
     expect(res[0]?.errorCount).toBeGreaterThan(0)

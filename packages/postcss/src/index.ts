@@ -6,7 +6,7 @@ import postcssCalc from 'postcss-calc'
 import postcssCombineDuplicatedSelectors from 'postcss-combine-duplicated-selectors'
 import postcssModules from 'postcss-modules'
 
-import { generateShortName } from './shortname-generator'
+import { generateShortName } from './shortname-generator.js'
 
 let shortNameGenerator = generateShortName()
 const shortNameMemo = new Map<string, string>()
