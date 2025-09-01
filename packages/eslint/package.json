@@ -1,9 +1,10 @@
 {
   "name": "@a01sa01to/eslint-config",
   "description": "My personal ESLint config",
-  "version": "2.1.6-beta.2",
+  "version": "2.1.6",
   "license": "MIT",
   "author": "a01sa01to",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/a01sa01to/config.git",
@@ -21,7 +22,6 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },

@@ -15,7 +15,7 @@ import PreferTariTari from 'textlint-rule-prefer-tari-tari'
 
 import type { TextlintFixableRuleDescriptor } from '@textlint/kernel'
 
-export = {
+export default {
   rules: {
     'ja-no-abusage': JaNoAbusage as TextlintFixableRuleDescriptor,
     'ja-space-around-code': JaSpaceAroundCode as TextlintFixableRuleDescriptor,

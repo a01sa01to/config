@@ -1,9 +1,3 @@
-export default {
-  arrowParens: 'avoid',
-  bracketSpacing: true,
-  endOfLine: 'lf',
-  jsxSingleQuote: true,
-  semi: false,
-  singleQuote: true,
-  useTabs: false,
-}
+import myConfig from '@a01sa01to/prettier-config'
+
+export default myConfig

@@ -1,7 +1,7 @@
 import { afterEach, expect, test } from 'vitest'
 import postcss, { type ProcessOptions } from 'postcss'
 
-import { plugins, testonly_resetShortNameGenerator } from '../src'
+import { plugins, testonly_resetShortNameGenerator } from '../src/index.js'
 
 afterEach(() => {
   testonly_resetShortNameGenerator()
