@@ -2,6 +2,7 @@
   "name": "@a01sa01to/editorconfig",
   "description": "My personal EditorConfig",
   "version": "0.0.1",
+  "type": "module",
   "keywords": [
     "editorconfig"
   ],
@@ -15,7 +16,8 @@
     "node": ">=20"
   },
   "files": [
-    "dist"
+    "dist",
+    ".editorconfig"
   ],
   "bin": {
     "a01sa01to-editorconfig": "./dist/bin.js"
@@ -27,7 +29,12 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "@types/yargs": "^17.0.33",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "chalk": "^5.6.0",
+    "yargs": "^18.0.0"
   }
 }
