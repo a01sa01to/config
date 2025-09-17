@@ -26,4 +26,4 @@ test('Generates .editorconfig file', async () => {
   // .editorconfig が生成されていることを確認
   const res = await stat(resolve(tmpDir, '.editorconfig'))
   expect(res.isFile()).toBe(true)
-})
+}, 10_000 /* tsx を介して実行するので制限時間は多めに設定 */)
