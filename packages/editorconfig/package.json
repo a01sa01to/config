@@ -19,9 +19,7 @@
     "dist",
     ".editorconfig"
   ],
-  "bin": {
-    "a01sa01to-editorconfig": "./dist/bin.js"
-  },
+  "bin": "./dist/bin.js",
   "scripts": {
     "build": "tsc",
     "test": "vitest",

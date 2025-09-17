@@ -16,7 +16,7 @@ __metadata:
     vitest: "npm:^3.2.4"
     yargs: "npm:^18.0.0"
   bin:
-    a01sa01to-editorconfig: ./dist/bin.js
+    editorconfig: ./dist/bin.js
   languageName: unknown
   linkType: soft
 
