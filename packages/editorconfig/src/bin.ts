@@ -11,7 +11,6 @@ import Logger from './logger.js'
 
 const main = async () => {
   const options = await yargs(argv)
-    // eslint-disable-next-line sort-keys
     .option('debug', { type: 'boolean', default: false })
     .parse()
   const logger = new Logger({ debug: options.debug })

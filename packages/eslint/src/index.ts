@@ -71,8 +71,6 @@ const config = tseslint.config(
       'require-unicode-regexp': 'error',
       // import のソートルール、グループ化してソートを OK とする
       'sort-imports': ['error', { allowSeparatedGroups: true }],
-      // object の key のソートルール、 caseSensitive & natural: 数字を数字としてソート
-      'sort-keys': ['error', 'asc', { caseSensitive: true, natural: true }],
       // 未使用の import をエラーにするルール
       'unused-imports/no-unused-imports': 'error',
       // 未使用の変数をエラーにするルール
