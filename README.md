@@ -10,6 +10,7 @@ My personal configuration files
 
 ## Packages
 
+- [@a01sa01to/editorconfig](https://www.npmjs.com/package/@a01sa01to/editorconfig)
 - [@a01sa01to/eslint-config](https://www.npmjs.com/package/@a01sa01to/eslint-config)
 - [@a01sa01to/postcss-config](https://www.npmjs.com/package/@a01sa01to/postcss-config)
 - [@a01sa01to/prettier-config](https://www.npmjs.com/package/@a01sa01to/prettier-config)
