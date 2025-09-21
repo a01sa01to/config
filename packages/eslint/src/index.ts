@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+import { defineConfig } from 'eslint/config'
 import eslint from '@eslint/js'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -17,7 +18,7 @@ const typedReactPluginFlatConfig = reactPlugin.configs.flat as {
   'jsx-runtime': ReactFlatConfig
 }
 
-const config = tseslint.config(
+const config = defineConfig(
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,

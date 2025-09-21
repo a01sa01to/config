@@ -1,6 +1,6 @@
 import { ESLint } from 'eslint'
 
-import config from '../src/index'
+import config from '../src/index.js'
 
 const createESLintInstance = () =>
   new ESLint({
