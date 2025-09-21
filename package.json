@@ -11,14 +11,14 @@
     "fix": "eslint . --fix && textlint . --fix && prettier --write .",
     "postinstall": "husky"
   },
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.10.2",
   "devDependencies": {
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
     "@a01sa01to/prettier-config": "workspace:*",
     "@changesets/cli": "^2.29.7",
     "@types/node": "^24.5.2",
-    "eslint": "^9.35.0",
+    "eslint": "^9.36.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
