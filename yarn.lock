@@ -43,6 +43,11 @@ __metadata:
     eslint: ^9
     react: ^19
     typescript: ^5
+  peerDependenciesMeta:
+    react:
+      optional: true
+    typescript:
+      optional: true
   languageName: unknown
   linkType: soft
 
