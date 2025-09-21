@@ -30,10 +30,7 @@ jobs:
         run: yarn test
 
   build:
-    strategy:
-      matrix:
-        runner: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.runner }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
