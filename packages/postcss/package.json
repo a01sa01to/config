@@ -17,7 +17,7 @@
     "postcss"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "exports": {
     ".": {
@@ -34,15 +34,15 @@
     "postcss": "^8"
   },
   "devDependencies": {
-    "@types/node": "^24.5.2",
+    "@types/node": "^25.2.3",
     "postcss": "^8.5.6",
     "postcss-load-config": "^6.0.1",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.21",
-    "cssnano": "^7.1.1",
+    "autoprefixer": "^10.4.24",
+    "cssnano": "^7.1.2",
     "postcss-calc": "^10.1.1",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-modules": "^6.0.1"
