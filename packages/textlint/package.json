@@ -18,7 +18,7 @@
     "textlintrule"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "exports": {
     ".": {
@@ -44,11 +44,11 @@
     "textlint-rule-prefer-tari-tari": "^1.0.3"
   },
   "devDependencies": {
-    "@textlint/kernel": "^15.2.2",
-    "@textlint/types": "^15.2.2",
-    "@types/node": "^24.5.2",
-    "textlint": "^15.2.2",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "@textlint/kernel": "^15.5.1",
+    "@textlint/types": "^15.5.1",
+    "@types/node": "^25.2.3",
+    "textlint": "^15.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }

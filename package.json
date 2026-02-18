@@ -16,14 +16,14 @@
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
     "@a01sa01to/prettier-config": "workspace:*",
-    "@changesets/cli": "^2.29.7",
-    "@types/node": "^24.5.2",
-    "eslint": "^9.36.0",
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^25.2.3",
+    "eslint": "^9.39.2",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.6",
-    "prettier": "^3.6.2",
-    "textlint": "^15.2.2",
-    "typescript": "^5.9.2"
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "textlint": "^15.5.1",
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,cjs,mjs,cts,mts}": [

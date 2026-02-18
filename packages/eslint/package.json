@@ -11,7 +11,7 @@
     "directory": "packages/eslint"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "files": [
     "dist"
@@ -45,20 +45,20 @@
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "@types/eslint-plugin-jsx-a11y": "^6.10.0",
-    "@types/node": "^24.5.2",
-    "@types/react": "^19.1.13",
-    "eslint": "^9.36.0",
-    "react": "^19.1.1",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "eslint": "^9.39.2",
+    "react": "^19.2.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "dependencies": {
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.39.2",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-unused-imports": "^4.2.0",
-    "typescript-eslint": "^8.44.0"
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "typescript-eslint": "^8.56.0"
   }
 }
