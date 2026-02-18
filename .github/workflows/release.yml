@@ -18,15 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
-          always-auth: true
-          scope: '@a01sa01to'
-          token: ${{ secrets.NPM_TOKEN }}
+          node-version: 24
+          scope: "@a01sa01to"
           cache: yarn
 
       - name: Install deps
@@ -44,5 +42,4 @@ jobs:
           commitMode: github-api
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
