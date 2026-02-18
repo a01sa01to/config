@@ -34,7 +34,7 @@
       "textlint --fix",
       "prettier --write"
     ],
-    "*.{json,css,scss,html,yaml}": [
+    "*.{json,css,scss,html,yaml,yml}": [
       "prettier --write"
     ]
   }
