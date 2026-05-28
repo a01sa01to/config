@@ -16,11 +16,11 @@
     "@a01sa01to/eslint-config": "workspace:*",
     "@a01sa01to/preset-textlint": "workspace:*",
     "@a01sa01to/prettier-config": "workspace:*",
-    "@changesets/cli": "^2.29.8",
+    "@changesets/cli": "^2.31.0",
     "@types/node": "^25.9.1",
     "eslint": "^10.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^17.0.5",
     "prettier": "^3.8.3",
     "textlint": "^15.7.1",
     "typescript": "^6.0.3"
