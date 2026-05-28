@@ -1,4 +1,4 @@
-import chalk from 'chalk'
+import { styleText } from 'node:util'
 
 interface Options {
   debug?: boolean
@@ -14,23 +14,24 @@ class Logger {
   }
 
   debug(...msg: unknown[]) {
-    if (this.options.debug) console.debug(chalk.bgBlack.cyan('DEBUG'), ...msg)
+    if (this.options.debug)
+      console.debug(styleText(['bgBlack', 'cyan'], 'DEBUG'), ...msg)
   }
 
   info(...msg: unknown[]) {
-    console.info(chalk.green('INFO'), ...msg)
+    console.info(styleText(['bgBlack', 'green'], 'INFO'), ...msg)
   }
 
   notice(...msg: unknown[]) {
-    console.log(chalk.bgBlack.cyan('NOTICE'), ...msg)
+    console.log(styleText(['bgBlack', 'blue'], 'NOTICE'), ...msg)
   }
 
   warn(...msg: unknown[]) {
-    console.warn(chalk.bgBlack.yellow('WARN'), ...msg)
+    console.warn(styleText(['bgBlack', 'yellow'], 'WARN'), ...msg)
   }
 
   error(...msg: unknown[]) {
-    console.error(chalk.bgBlack.red('ERROR'), ...msg)
+    console.error(styleText(['bgBlack', 'red'], 'ERROR'), ...msg)
   }
 }
 
