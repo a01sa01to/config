@@ -1,29 +1,29 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from "vitest";
 
-import { createESLintInstance } from './common.js'
+import { createESLintInstance } from "./common.js";
 
-test('should be setup', () => {
-  const instance = createESLintInstance()
-  expect(instance).not.toBeUndefined()
-})
+test("should be setup", () => {
+  const instance = createESLintInstance();
+  expect(instance).not.toBeUndefined();
+});
 
-test('no-used-vars', async () => {
-  const instance = createESLintInstance()
-  const res = await instance.lintText('const foo = 1')
-  expect(res).toHaveLength(1)
-  expect(res[0]?.errorCount).toBeGreaterThan(0)
-})
+test("no-used-vars", async () => {
+  const instance = createESLintInstance();
+  const res = await instance.lintText("const foo = 1");
+  expect(res).toHaveLength(1);
+  expect(res[0]?.errorCount).toBeGreaterThan(0);
+});
 
-test('unused-imports', async () => {
-  const instance = createESLintInstance()
-  const res = await instance.lintText("import { foo } from './foo'")
-  expect(res).toHaveLength(1)
-  expect(res[0]?.errorCount).toBeGreaterThan(0)
-})
+test("unused-imports", async () => {
+  const instance = createESLintInstance();
+  const res = await instance.lintText("import { foo } from './foo'");
+  expect(res).toHaveLength(1);
+  expect(res[0]?.errorCount).toBeGreaterThan(0);
+});
 
-describe('React', () => {
-  test('Normal', async () => {
-    const instance = createESLintInstance()
+describe("React", () => {
+  test("Normal", async () => {
+    const instance = createESLintInstance();
     const res = await instance.lintText(
       `
       import { useEffect, useState } from 'react'
@@ -36,15 +36,15 @@ describe('React', () => {
       }
     `,
       {
-        filePath: 'src/App.jsx',
-      }
-    )
-    expect(res).toHaveLength(1)
-    expect(res[0]?.errorCount).toBe(0)
-  })
+        filePath: "src/App.jsx",
+      },
+    );
+    expect(res).toHaveLength(1);
+    expect(res[0]?.errorCount).toBe(0);
+  });
 
-  test('a11y', async () => {
-    const instance = createESLintInstance()
+  test("a11y", async () => {
+    const instance = createESLintInstance();
     const res = await instance.lintText(
       `
       export default function App() {
@@ -53,10 +53,10 @@ describe('React', () => {
       }
     `,
       {
-        filePath: 'src/App.jsx',
-      }
-    )
-    expect(res).toHaveLength(1)
-    expect(res[0]?.errorCount).toBeGreaterThan(0)
-  })
-})
+        filePath: "src/App.jsx",
+      },
+    );
+    expect(res).toHaveLength(1);
+    expect(res[0]?.errorCount).toBeGreaterThan(0);
+  });
+});

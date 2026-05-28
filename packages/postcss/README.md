@@ -13,12 +13,12 @@ npm install --save-dev @a01sa01to/postcss-config
 Edit `postcss.config.mts`:
 
 ```js
-import postcssConfig from '@a01sa01to/postcss-config'
+import postcssConfig from "@a01sa01to/postcss-config";
 
 export default {
   ...postcssConfig,
   // overrides
-}
+};
 ```
 
 ## Configs

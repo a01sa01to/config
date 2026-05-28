@@ -1,3 +1,3 @@
-import myConfig from '@a01sa01to/prettier-config'
+import myConfig from "@a01sa01to/prettier-config";
 
-export default myConfig
+export default myConfig;
