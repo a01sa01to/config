@@ -13,12 +13,12 @@ npm install --save-dev @a01sa01to/prettier-config
 Edit `.prettierrc.mjs`:
 
 ```js
-import prettierConfig from '@a01sa01to/prettier-config'
+import prettierConfig from "@a01sa01to/prettier-config";
 
 export default {
   ...prettierConfig,
   // overrides
-}
+};
 ```
 
 ## Configs

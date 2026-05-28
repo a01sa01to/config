@@ -1,22 +1,22 @@
-import type { Linter } from 'eslint'
-import { defineConfig } from 'eslint/config'
-import eslint from '@eslint/js'
-import jsxA11y from 'eslint-plugin-jsx-a11y'
-import reactPlugin from 'eslint-plugin-react'
-import tseslint from 'typescript-eslint'
-import unusedImports from 'eslint-plugin-unused-imports'
+import type { Linter } from "eslint";
+import { defineConfig } from "eslint/config";
+import eslint from "@eslint/js";
+import jsxA11y from "eslint-plugin-jsx-a11y";
+import reactPlugin from "eslint-plugin-react";
+import tseslint from "typescript-eslint";
+import unusedImports from "eslint-plugin-unused-imports";
 
 interface ReactFlatConfig {
-  plugins: { react: typeof reactPlugin }
-  rules: Linter.RulesRecord
-  languageOptions: { parserOptions: Linter.ParserOptions }
+  plugins: { react: typeof reactPlugin };
+  rules: Linter.RulesRecord;
+  languageOptions: { parserOptions: Linter.ParserOptions };
 }
 
 const typedReactPluginFlatConfig = reactPlugin.configs.flat as {
-  all: ReactFlatConfig
-  recommended: ReactFlatConfig
-  'jsx-runtime': ReactFlatConfig
-}
+  all: ReactFlatConfig;
+  recommended: ReactFlatConfig;
+  "jsx-runtime": ReactFlatConfig;
+};
 
 const config = defineConfig(
   eslint.configs.recommended,
@@ -25,13 +25,13 @@ const config = defineConfig(
   {
     extends: [
       typedReactPluginFlatConfig.recommended,
-      typedReactPluginFlatConfig['jsx-runtime'],
+      typedReactPluginFlatConfig["jsx-runtime"],
       jsxA11y.flatConfigs.recommended,
     ],
-    files: ['**/*.tsx', '**/*.jsx'],
+    files: ["**/*.tsx", "**/*.jsx"],
     settings: {
       react: {
-        version: '19',
+        version: "19",
       },
     },
   },
@@ -45,43 +45,43 @@ const config = defineConfig(
   },
   {
     plugins: {
-      'unused-imports': unusedImports,
+      "unused-imports": unusedImports,
     },
     rules: {
       // type は type で export する
-      '@typescript-eslint/consistent-type-exports': 'error',
+      "@typescript-eslint/consistent-type-exports": "error",
       // type は type で import する
-      '@typescript-eslint/consistent-type-imports': 'error',
+      "@typescript-eslint/consistent-type-imports": "error",
       // for とかの {} を省略するかのルール、複数行なら省略しない・ 1 行なら省略可だが統一させる
-      curly: ['error', 'multi', 'consistent'],
+      curly: ["error", "multi", "consistent"],
       // 同じモジュールからの import はまとめるルール
-      'no-duplicate-imports': 'error',
+      "no-duplicate-imports": "error",
       // x === x を禁止するルール
-      'no-self-compare': 'error',
+      "no-self-compare": "error",
       // '" 内の ${} を禁止するルール
-      'no-template-curly-in-string': 'error',
+      "no-template-curly-in-string": "error",
       // 未使用の変数をエラーにするルール
-      'no-unused-vars': 'error',
+      "no-unused-vars": "error",
       // 定義前に変数を使わないようにするルール
-      'no-use-before-define': 'error',
+      "no-use-before-define": "error",
       // dead store を防ぐルール
-      'no-useless-assignment': 'error',
+      "no-useless-assignment": "error",
       // let -> const
-      'prefer-const': 'error',
+      "prefer-const": "error",
       // regex に u をつけるルール、 UTF-16 でちゃんと動くようにする
-      'require-unicode-regexp': 'error',
+      "require-unicode-regexp": "error",
       // import のソートルール、グループ化してソートを OK とする
-      'sort-imports': ['error', { allowSeparatedGroups: true }],
+      "sort-imports": ["error", { allowSeparatedGroups: true }],
       // 未使用の import をエラーにするルール
-      'unused-imports/no-unused-imports': 'error',
+      "unused-imports/no-unused-imports": "error",
       // 未使用の変数をエラーにするルール
-      'unused-imports/no-unused-vars': 'error',
+      "unused-imports/no-unused-vars": "error",
     },
   },
   {
     extends: [tseslint.configs.disableTypeChecked],
-    files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'],
-  }
-)
+    files: ["**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cjs"],
+  },
+);
 
-export default config
+export default config;
