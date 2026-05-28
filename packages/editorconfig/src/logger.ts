@@ -19,7 +19,7 @@ class Logger {
   }
 
   info(...msg: unknown[]) {
-    console.info(styleText(['bgBlack', 'green'], 'INFO'), ...msg)
+    console.info(styleText(['green'], 'INFO'), ...msg)
   }
 
   notice(...msg: unknown[]) {
