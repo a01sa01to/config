@@ -46,7 +46,7 @@
   "devDependencies": {
     "@textlint/kernel": "^15.7.1",
     "@textlint/types": "^15.7.1",
-    "@types/node": "^25.2.3",
+    "@types/node": "^25.9.1",
     "textlint": "^15.7.1",
     "typescript": "^6.0.3",
     "vitest": "^4.0.18"
