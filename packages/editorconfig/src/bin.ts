@@ -1,19 +1,22 @@
 #!/usr/bin/env node
 
-import { argv } from 'node:process'
 import { copyFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
+import { parseArgs } from 'node:util'
 import { resolve } from 'node:path'
-
-import yargs from 'yargs'
 
 import Logger from './logger.js'
 
 const main = async () => {
-  const options = await yargs(argv)
-    .option('debug', { type: 'boolean', default: false })
-    .parse()
-  const logger = new Logger({ debug: options.debug })
+  const {
+    values: { debug },
+  } = parseArgs({
+    options: {
+      debug: { type: 'boolean', default: false },
+    },
+  })
+
+  const logger = new Logger({ debug })
 
   logger.debug('Debug mode is on')
 
