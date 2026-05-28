@@ -18,10 +18,10 @@
     "@a01sa01to/prettier-config": "workspace:*",
     "@changesets/cli": "^2.29.8",
     "@types/node": "^25.9.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "textlint": "^15.7.1",
     "typescript": "^6.0.3"
   },
