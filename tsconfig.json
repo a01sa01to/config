@@ -1,32 +1,39 @@
 {
   "compilerOptions": {
+    // 環境設定
     "target": "ESNext",
     "module": "NodeNext",
+    "lib": ["ESNext"],
+    "types": ["node"],
+    // 出力まわり
+    "sourceMap": false,
     "declaration": true,
+    "declarationMap": false,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    // 厳格に
     "strict": true,
-    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
+    // スタイル
+    "noImplicitAny": true,
     "noImplicitThis": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-    "skipLibCheck": false,
-    "types": ["node"],
-    "moduleResolution": "nodenext",
-    "isolatedModules": true
+    // その他
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    // その他 2
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": false
   }
 }

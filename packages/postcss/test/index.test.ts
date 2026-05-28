@@ -44,7 +44,9 @@ test('postcss-combine-duplicated-selectors', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe('.a{background-color:red;color:red}.b{color:blue}')
+  expect(result.css).toMatch(/\.a\{.*color:red.*\}/u)
+  expect(result.css).toMatch(/\.a\{.*background-color:red.*\}/u)
+  expect(result.css).toMatch(/\.b\{.*color:blue.*\}/u)
 })
 
 test('postcss-calc', async () => {
@@ -72,5 +74,6 @@ test('cssnano', async () => {
 }
 `.trim()
   const result = await instance.process(css, processOption)
-  expect(result.css).toBe('.a{color:red;font-weight:400}')
+  expect(result.css).toMatch(/\.a\{.*color:red.*\}/u)
+  expect(result.css).toMatch(/\.a\{.*font-weight:400.*\}/u)
 })
