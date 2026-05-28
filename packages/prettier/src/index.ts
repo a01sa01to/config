@@ -1,15 +1,16 @@
 import type { Config } from 'prettier'
 
 const config: Config = {
-  arrowParens: 'avoid',
+  arrowParens: 'always',
   bracketSameLine: false,
   bracketSpacing: true,
   endOfLine: 'lf',
-  jsxSingleQuote: true,
+  jsxSingleQuote: false,
   quoteProps: 'as-needed',
-  semi: false,
-  singleQuote: true,
-  trailingComma: 'es5',
+  semi: true,
+  singleQuote: false,
+  tabWidth: 2,
+  trailingComma: 'all',
   useTabs: false,
 }
 
