@@ -22,7 +22,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
-    "textlint": "^15.5.1",
+    "textlint": "^15.7.1",
     "typescript": "^6.0.3"
   },
   "lint-staged": {
